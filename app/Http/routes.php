@@ -12,5 +12,16 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+    return redirect('/startup');
 });
+
+Route::resource('startup', 'StartupController');
+Route::resource('autenticar', 'StartupController@AutenticateUser');
+/*
+ * 
+ * Route::get('/cuentas', function () {
+    return redirect('/upload');
+});Route::post('subirArchivos', 'UploadController@subirArchivos');
+Route::post('procesarArchivos', 'UploadController@procesarArchivos');
+Route::get('/download/{filename}', 'UploadController@getDownload');
+*7
