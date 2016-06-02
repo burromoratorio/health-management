@@ -21,7 +21,7 @@ elixir(function(mix) {
 	]);
     mix.sass(['app.scss'], 'resources/assets/stylesheets/');
     mix.styles([
-        '../stylesheets/application-a07755f5.css',
+        '../stylesheetsapplication-a07755f5.css',
      ]);
     mix.copy([
         'resources/assets/fonts/',

@@ -2,10 +2,6 @@
 /vendor
 /node_modules
 /public/storage
-/public/css
-/public/fonts
-/public/js
-/resources/assets/stylesheets/app.css*
 Homestead.yaml
 Homestead.json
 .env
@@ -25,4 +21,3 @@ storage/
 .env
 .env.example
 >>>>>>> f7cd8556520dbdcae37bb969a8d83a4b192ddfa1
-
