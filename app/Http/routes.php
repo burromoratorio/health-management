@@ -24,4 +24,4 @@ Route::resource('autenticar', 'StartupController@AutenticateUser');
 });Route::post('subirArchivos', 'UploadController@subirArchivos');
 Route::post('procesarArchivos', 'UploadController@procesarArchivos');
 Route::get('/download/{filename}', 'UploadController@getDownload');
-*7
+*/
