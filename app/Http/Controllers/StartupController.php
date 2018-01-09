@@ -2,24 +2,26 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Input;
 use App\Http\Requests;
-use Illuminate\Foundation\Bus\DispatchesJobs;
-use Illuminate\Routing\Controller as BaseController;
-Use Log;
-use Storage;
-Use File;
-use PHPExcel; 
-use PHPExcel_IOFactory;
+use Illuminate\Http\Request;
+use Auth;
+use DB;
 use Response;
 use Session;
+Use Log;
+use Carbon\Carbon;
+
+use App\User;
+
 
 class StartupController extends Controller
 {
+	public $module = 'inicio';
+	
     public function index(Request $request) {
+		$usuario	= Auth::user();
 		$auth = $request->session()->get('auth');
-        if($auth=="si"){
+        if($usuario){
 			return view("index");
 		}else{
 			return view('login');
@@ -29,5 +31,9 @@ class StartupController extends Controller
     public function AutenticateUser(){
 		Session::flash('auth', 'si');
 		return redirect()->back();
+	}
+	public function entrar(){
+		
+		return view("welcome");
 	}
 }

@@ -4,9 +4,39 @@
     "prod": "gulp --production",
     "dev": "gulp watch"
   },
-  "devDependencies": {
+  "dependencies": {
     "gulp": "^3.9.1",
     "laravel-elixir": "^5.0.0",
-    "bootstrap-sass": "^3.3.0"
-  }
+    "bootstrap-sass": "^3.3.0",
+    "jquery": "^2.2.2",
+    "jquery-ui-dist": "^1.12.1"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1"
+  },
+  "name": "laravel-elixir",
+  "description": "Proyecto web para la aplicacion de gestion de afiliados ======= # health-management Sistema de Gestion de registros de salud y practicas medicas de pacientes",
+  "version": "5.0.0",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burromoratorio/health-management.git"
+  },
+  "keywords": [
+    "healt",
+    "ahf",
+    "medical",
+    "system",
+    "management",
+    "caici"
+  ],
+  "author": "Alan Ramirez Moratorio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/burromoratorio/health-management/issues"
+  },
+  "homepage": "https://github.com/burromoratorio/health-management#readme"
 }

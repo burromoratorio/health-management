@@ -1,7 +1,10 @@
 <?php
 
 return [
-
+	
+    'name' => 'Health Managament',
+    'description' => 'Sistema de Gestion Medica',
+    'author' => 'Alan Ramirez Moratorio',
     /*
     |--------------------------------------------------------------------------
     | Application Environment
