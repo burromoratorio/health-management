@@ -20,17 +20,24 @@ class StartupController extends Controller
 	
     public function index(Request $request) {
 		$usuario	= Auth::user();
-		$auth = $request->session()->get('auth');
-        if($usuario){
+		//$auth = $request->session()->get('auth');
+		if ( Auth::user()->hasRole('super-user') ) {
 			return view("index");
 		}else{
 			return view('login');
 		}
+        /*if($usuario){
+			dd($usuario);
+			return view("index");
+		}else{
+			return view('login');
+		}*/
         
     }
     public function AutenticateUser(){
-		Session::flash('auth', 'si');
-		return redirect()->back();
+		return view("index");
+		//Session::flash('auth', 'si');
+		//return redirect()->back();
 	}
 	public function entrar(){
 		

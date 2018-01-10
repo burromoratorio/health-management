@@ -23,8 +23,9 @@ Route::auth();
 
 Route::group(['middleware' => ['auth']], function() {
 
-    Route::get('/',     ['as'=> 'home.entrar', 'uses' => 'StartupController@entrar' ]);
-    Route::get('/home', ['as'=> 'home.index', 'uses' => 'StartupController@index' ]);
+    Route::get('/',     ['as'=> 'home.index', 'uses' => 'StartupController@index' ]);
+    Route::get('/home', ['as'=> 'home.index', 'uses' => 'StartupController@AutenticateUser' ]);
+    
     
     //CRUD
     Route::post('usuarios',          [ 'middleware'=>['permission:usuarios-crear'],    'as'=> 'usuarios.store',   'uses' => 'UserController@store' ]);

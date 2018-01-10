@@ -7,8 +7,8 @@
 
             <ul class="nav navbar-nav navbar-right">
                 <li class="">
-                    <!--  Top Menu -->
-                    @include('layouts.top_menu')
+                    <!--  Top Menu @include('layouts.top_menu')-->
+                    @include('layouts.panel_navbar')
                 </li>
 
                 <li role="presentation" class="dropdown">
