@@ -14,14 +14,43 @@ elixir(function(mix) {
     mix.scripts([
         '../../../node_modules/jquery/dist/jquery.js',
         '../../../node_modules/bootstrap-sass/assets/javascripts/bootstrap.js',
-        '../javascripts/application-985b892b.js',
-        '../javascripts/html5shiv-0f395d46.js',
-        '../javascripts/jquery.knob-573828e1.js',
-        '../javascripts/plugins-6815af79.js',
+        '../../../resources/assets/bower_components/jquery/jquery.min.js',
+        '../../../resources/assets/js/jquery.cookie.js',
+        '../../../resources/assets/js/jquery.dataTables.min.js',
+        '../../../resources/assets/js/jquery.noty.js',
+        '../../../resources/assets/js/jquery.raty.min.js',
+        '../../../resources/assets/js/jquery.iphone.toggle.js',
+        '../../../resources/assets/js/jquery.autogrow-textarea.js',
+        '../../../resources/assets/js/jquery.uploadify-3.1.min.js',
+        '../../../resources/assets/js/jquery.history.js',
+        '../../../resources/assets/js/charisma.js',
+        '../../../resources/assets/bower_components/bootstrap/dist/js/bootstrap.min.js',
+        '../../../resources/assets/bower_components/moment/min/moment.min.js',
+        '../../../resources/assets/bower_components/fullcalendar/dist/fullcalendar.min.js',
+        '../../../resources/assets/bower_components/chosen/chosen.jquery.min.js',
+        '../../../resources/assets/bower_components/colorbox/jquery.colorbox-min.js',
+        '../../../resources/assets/bower_components/responsive-tables/responsive-tables.js',
+        '../../../resources/assets/bower_components/bootstrap-tour/build/js/bootstrap-tour.min.js'
+        
 	]);
-    mix.sass(['app.scss'], 'resources/assets/stylesheets/');
+    mix.sass(['app.scss'], 'resources/assets/css/');
     mix.styles([
-        '../stylesheets/application-a07755f5.css',
+		'../../../resources/assets/css/bootstrap-cerulean.min.css',
+		'../../../resources/assets/css/charisma-app.css',
+        '../../../resources/assets/bower_components/fullcalendar/dist/fullcalendar.css',
+        '../../../resources/assets/bower_components/fullcalendar/dist/fullcalendar.print.css',
+        '../../../resources/assets/bower_components/chosen/chosen.min.css',
+        '../../../resources/assets/bower_components/colorbox/example3/colorbox.css',
+        '../../../resources/assets/bower_components/responsive-tables/responsive-tables.css',
+        '../../../resources/assets/bower_components/bootstrap-tour/build/css/bootstrap-tour.min.css',
+        '../../../resources/assets/css/jquery.noty.css', 
+        '../../../resources/assets/css/noty_theme_default.css',
+        '../../../resources/assets/css/elfinder.min.css',
+        '../../../resources/assets/css/elfinder.theme.css',
+        '../../../resources/assets/css/jquery.iphone.toggle.css',
+        '../../../resources/assets/css/uploadify.css',
+        '../../../resources/assets/css/animate.min.css'
+        
      ]);
     mix.copy([
         'resources/assets/fonts/',

@@ -37,12 +37,12 @@
 	<li class='dropdown user'>
 	  <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
 		<i class='icon-user'></i>
-		<strong>{{ $currentUser['name'] }}</strong>
+		<strong>{{ Auth::user()->name }}</strong>
 		<img class="img-rounded" src="http://placehold.it/20x20/ccc/777" />
 		<b class='caret'></b>
 	  </a>
 	  <ul class='dropdown-menu'>
-		<li><a href="{{ route('perfiles.index', $currentUser['username'] ) }}"> Perfil</a></li>
+		<li><a href="{{ route('perfiles.index', Auth::user()->name ) }}"> Perfil</a></li>
 		<li class='divider'></li>
 		<li>
 		  <a href="{{ url('/logout') }}"><i class="fa fa-sign-out pull-right"></i>Logout</a>
