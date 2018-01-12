@@ -12,8 +12,8 @@ var elixir = require('laravel-elixir');
  */
 elixir(function(mix) {
     mix.scripts([
-        '../../../node_modules/jquery/dist/jquery.js',
-        '../../../node_modules/bootstrap-sass/assets/javascripts/bootstrap.js',
+        //'../../../node_modules/jquery/dist/jquery.js',
+       // '../../../node_modules/bootstrap-sass/assets/javascripts/bootstrap.js',
         '../../../resources/assets/bower_components/jquery/jquery.min.js',
         '../../../resources/assets/js/jquery.cookie.js',
         '../../../resources/assets/js/jquery.dataTables.min.js',
