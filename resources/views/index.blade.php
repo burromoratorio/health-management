@@ -15,8 +15,7 @@
         @include('layouts.left_menu')
         <!--/span-->
         <!-- left menu ends -->
-
-        <noscript>
+		<noscript>
             <div class="alert alert-block col-md-12">
                 <h4 class="alert-heading">Warning!</h4>
 
@@ -24,11 +23,8 @@
                     enabled to use this site.</p>
             </div>
         </noscript>
-
-        <div id="content" class="col-lg-10 col-sm-10">
+	<div id="content" class="col-lg-10 col-sm-10">
             <!-- content starts -->
-            
-
 <div>
     <ul class="breadcrumb">
         <li>
