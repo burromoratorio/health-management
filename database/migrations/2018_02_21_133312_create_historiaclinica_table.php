@@ -18,6 +18,8 @@ class CreateHistoriaclinicaTable extends Migration
             $table->foreign('paciente_id')->references('id')->on('paciente');
             $table->bigInteger('especialidad_profesional_id')->nullable();
             $table->foreign('especialidad_profesional_id')->references('id')->on('especialidadprofesional');
+            $table->bigInteger('user_id')->nullable();
+            $table->foreign('user_id')->references('id')->on('users');
             $table->dateTime('fecha')->nullable();
             $table->string('diagnostico');
             $table->string('tratamiento');

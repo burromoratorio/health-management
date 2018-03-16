@@ -71,4 +71,7 @@ Route::group(['middleware' => ['auth']], function() {
     Route::post('/perfiles/{username}/image',   [ 'as' => 'perfiles.image',  'uses' => 'ProfileController@image' ]);
     Route::patch('/perfiles/{username}/update', [ 'as' => 'perfiles.update', 'uses' => 'ProfileController@update' ]);
 
+/*turnos*/
+    Route::get('turnos',          [ 'as' => 'turnos.index',  'uses' => 'TurnosController@index' ]);
+
 });
